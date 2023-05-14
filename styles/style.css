@@ -1,0 +1,127 @@
+body{
+   background-color: rgb(34, 34, 34);
+   color: white;
+   font-family: poppinsregular;
+   margin: 0 auto ; 
+   padding: 15px;
+}
+
+#container{
+    max-width: 1600px;
+    margin: 0 auto
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title{
+
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: rgb(132, 14, 201); 
+    transition: 0.3s all;
+}
+
+#inscreva-se-btn{
+    border: 2px solid rgb(132, 14, 201);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#inscreva-se-btn:hover{
+background-color:rgb(132, 14, 201) ;
+color: white;
+}
+
+h1{
+    font-weight: 200 ;
+}
+
+main{
+    width: 100%;
+  display: flex;
+  align-items: center;
+    
+}
+
+aside{
+    width: 100%;
+    margin-top: 50px ;
+} 
+
+h2{
+    font-size: 56px;
+    line-height: 10px;
+    font-family: poppinsmedium;
+}
+
+span{
+    color: rgb(132, 14, 201);
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px;
+    font-family: poppinslight;
+}
+
+article{
+    width: 50%;
+    align-self: center;
+    margin-top: 150px;
+}
+
+img{
+    width: 700px;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 45%; 
+}
+
+form [type="submit"]{
+    height: 45px;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    font-weight: bold;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+    height: 45px;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    font-weight: bold;
+}
+
+
+input{
+    margin-top: 20px;
+    height: 45px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}

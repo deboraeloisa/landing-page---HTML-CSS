@@ -6,21 +6,18 @@ body{
    padding: 15px;
 }
 
-#container{
-    max-width: 1600px;
-    margin: 0 auto
 
-}
-
-header{
+#navigation{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+   transition: all 0.5s;
 }
 
 #title{
-
+    margin-left: 10px;
+     font-size: 24px;
     flex-direction: column;
     line-height: 10px;
 }
@@ -28,6 +25,7 @@ header{
 li{
     display: inline-block;
     margin: 20px;
+
 }
 
 a{
@@ -38,11 +36,12 @@ a:hover{
     color: rgb(132, 14, 201); 
     transition: 0.3s all;
 }
-
+ 
 #inscreva-se-btn{
     border: 2px solid rgb(132, 14, 201);
-    border-radius: 15px;
-    padding: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    
 }
 
 #inscreva-se-btn:hover{
@@ -50,25 +49,36 @@ background-color:rgb(132, 14, 201) ;
 color: white;
 }
 
+
+
+
+
 h1{
+  
     font-weight: 200 ;
 }
 
 main{
-    width: 100%;
+ 
+  width: 100%;
   display: flex;
   align-items: center;
+ 
     
 }
 
 aside{
-    width: 100%;
-    margin-top: 50px ;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    
 } 
 
 h2{
-    font-size: 56px;
-    line-height: 10px;
+    margin: 0;
+    font-size: 43px;
+    line-height: 3rem;
     font-family: poppinsmedium;
 }
 
@@ -77,31 +87,33 @@ span{
 }
 
 p{
+    
     line-height: 20px;
-    max-width: 500px;
+    max-width: 400px;
     font-family: poppinslight;
 }
 
 article{
-    width: 50%;
+    width: 40%;
     align-self: center;
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 img{
-    width: 700px;
-    -moz-background-size: contain;
-    background-size: contain;
-    -o-background-size: contain;
+    margin-top: 2.0rem;
+    width: 100%;
+    
 }
 
 form{
     display: flex;
     flex-direction: column;
-    width: 45%; 
+    width: 40%; 
+  
 }
 
 form [type="submit"]{
+  
     height: 45px;
     background-color: rgb(132, 14, 201);
     color: white;
@@ -118,10 +130,174 @@ form [type="submit"]:hover{
 
 
 input{
+    
     margin-top: 20px;
-    height: 45px;
-    padding: 15px;
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
     border-radius: 20px;
     border: none;
     font-size: 15px;
 }
+.menu{
+    cursor: pointer;
+    display: none;
+}
+
+.menu div{
+ width: 32px;
+ height: 2px;
+ background: #fff;
+ margin: 8px;
+}
+
+/*parte responsiva*/
+
+@media (max-width: 414px){
+
+ 
+    h1{
+      line-height: 0.5rem;
+      font-size: 20px;
+    }
+   
+  
+      h2{
+          font-size: 28px;
+          line-height: 2rem;
+      }
+  
+      p{
+          font-size: 1rem;
+          margin:  4px 0;
+      }
+  
+      main{
+        margin: 0 15% ;
+      }
+  
+      form{
+         height: 10rem;
+          width: 80%;
+      }
+      
+    
+      aside{
+          width: 100%;
+      }
+  
+      article{
+       display: block;
+      }
+  
+    
+    
+     .nav-menu{
+       position: absolute;
+       display: none;}
+
+
+      .menu{
+        display: block;
+      }
+      
+      
+  }
+
+  @media (max-width: 700px){
+
+ 
+    h1{
+      line-height: 0.5rem;
+      font-size: 20px;
+    }
+   
+  
+      h2{
+          font-size: 28px;
+          line-height: 2rem;
+      }
+  
+      p{
+          font-size: 1rem;
+          margin:  4px 4px;
+      }
+  
+      main{
+        margin: 0 1% ;
+      }
+  
+      form{
+         height: 10rem;
+          width: 70%;
+      }
+      
+    
+      aside{
+          width: 50%;
+      }
+  
+      
+  
+    
+    
+     .nav-menu{
+       position: absolute;
+       display: none;}
+
+
+      .menu{
+        display: block;
+      }
+      
+      
+  }
+
+  @media (max-width: 873px){
+
+ 
+    h1{
+      line-height: 0.5rem;
+      font-size: 20px;
+    }
+   
+  
+      h2{
+          font-size: 28px;
+          line-height: 2rem;
+      }
+  
+      p{
+          font-size: 1rem;
+          margin:  4px 4px;
+      }
+  
+      main{
+        margin: 0 1% ;
+      }
+  
+      form{
+         height: 10rem;
+          width: 70%;
+      }
+      
+    
+      aside{
+          width: 50%;
+      }
+  
+      
+  
+    
+    
+     .nav-menu{
+       position: absolute;
+       display: none;}
+
+
+      .menu{
+        display: block;
+      }
+      
+      
+  }
